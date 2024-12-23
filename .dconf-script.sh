@@ -19,7 +19,7 @@ dconf write '/org/gnome/shell/extensions/pop-shell/tile-swap-up' "['<Shift>k']"
 dconf write '/org/gnome/shell/extensions/pop-shell/tile-swap-down' "['<Shift>j']"
 
 # (Edit mode) Resize window (pop shell)
-dconf write '/org/gnome/shell/extensions/pop-shell/tile-resize-left' "['<Ctrl>']"
+dconf write '/org/gnome/shell/extensions/pop-shell/tile-resize-left' "['<Ctrl>l']"
 dconf write '/org/gnome/shell/extensions/pop-shell/tile-resize-right' "['<Ctrl>h']"
 dconf write '/org/gnome/shell/extensions/pop-shell/tile-resize-up' "['<Ctrl>j']"
 dconf write '/org/gnome/shell/extensions/pop-shell/tile-resize-down' "['<Ctrl>k']"

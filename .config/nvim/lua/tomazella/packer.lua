@@ -1,3 +1,5 @@
+if vim.g.vscode then return end
+
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
@@ -41,7 +43,7 @@ return require('packer').startup(function(use)
 
     -- Other Plugins
     use 'tpope/vim-surround'             -- Surrounding ysw)
-    use 'preservim/nerdtree'             -- NerdTree
+    -- use 'preservim/nerdtree'             -- NerdTree
     use 'tpope/vim-commentary'           -- For Commenting gcc & gc
     use 'ap/vim-css-color'               -- CSS Color Preview
     use 'tc50cal/vim-terminal'           -- Vim Terminal
@@ -49,6 +51,20 @@ return require('packer').startup(function(use)
     use 'terryma/vim-multiple-cursors'   -- CTRL + N for multiple cursors
     use 'christoomey/vim-tmux-navigator' -- Tmux-Vim Navigations
     use 'itchyny/lightline.vim'
+    use 'habamax/vim-godot'
+    use {
+        'ggandor/leap.nvim',
+        requires = {
+			'tpope/vim-repeat'
+        }
+    }
+    use({
+        "iamcco/markdown-preview.nvim",
+        run = "cd app && npm install",
+        setup = function() vim.g.mkdp_filetypes = { "markdown" } end,
+        ft = { "markdown" },
+    })
+
 
     -- Themes
     use 'marko-cerovac/material.nvim'
